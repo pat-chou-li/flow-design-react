@@ -1,0 +1,294 @@
+.loginContainer {
+  * {
+    transition: all 0.5s;
+  }
+  .bac {
+    width: 100%;
+    height: 95.7vh;
+    background-image: url("../../static/loginBac.jpg");
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: absolute;
+    opacity: 0.1;
+  }
+  .fixedCard {
+    width: 41.6vw;
+    height: 43vh;
+    background: rgba(255, 94, 0, 1);
+    box-shadow: -10px -15px 15px rgba(255, 255, 255, 1);
+    box-shadow: 5px 10px 15px rgba(208, 213, 217, 1);
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -21.5vh;
+    margin-left: -20.8vw;
+    display: flex;
+    cursor: pointer;
+    .left {
+      box-sizing: border-box;
+      padding: 1.5vw;
+      height: 100%;
+      position: relative;
+      flex: 1;
+      .top {
+        width: 1vw;
+        height: 10%;
+        .bank {
+          width: 10vw;
+        }
+      }
+      .ch {
+        width: 3.5vw;
+        position: absolute;
+        right: 2vw;
+        top: 1.8vw;
+      }
+      .bottom {
+        height: 65%;
+        .textImg {
+          width: 4vw;
+          margin-top: 1vh;
+        }
+        .text {
+          color: rgba(255, 255, 255, 1);
+          font-size: 15px;
+          text-decoration: underline;
+        }
+        .step {
+          width: 0.8vw;
+          transform: rotate(180deg);
+          margin-left: 0.5vw;
+          position: relative;
+          bottom: 1.5vh;
+        }
+      }
+      .final {
+        .monkey {
+          height: 10vh;
+        }
+        .textContainer {
+          float: right;
+          width: 9vw;
+          margin-top: 2vh;
+          .text {
+            margin-top: 0.4vh;
+            width: 8vw;
+          }
+        }
+      }
+    }
+    .right {
+      transform: rotateY(180deg);
+      box-sizing: border-box;
+      padding: 1.5vw;
+      height: 100%;
+      position: relative;
+      flex: 1;
+      .top {
+        width: 1vw;
+        height: 10%;
+        .bank {
+          transform: rotateY(180deg);
+          width: 10vw;
+        }
+      }
+      .ch {
+        transform: rotateY(180deg);
+        width: 3.5vw;
+        position: absolute;
+        right: 2vw;
+        top: 1.8vw;
+      }
+      .bottom {
+        height: 65%;
+        .textImg {
+          transform: rotateY(180deg);
+          width: 4vw;
+          margin-top: 1vh;
+        }
+        .text {
+          position: absolute;
+          transform: rotateY(180deg);
+          color: rgba(255, 255, 255, 1);
+          font-size: 15px;
+          text-decoration: underline;
+        }
+        .step {
+          width: 0.8vw;
+          transform: rotate(180deg);
+          margin-left: 0.5vw;
+          position: relative;
+          bottom: 1.5vh;
+        }
+      }
+      .final {
+        .monkey {
+          height: 10vh;
+        }
+        .textContainer {
+          float: right;
+          width: 9vw;
+          margin-top: 2vh;
+          transform: rotateY(180deg);
+          .text {
+            margin-top: 0.4vh;
+            width: 8vw;
+          }
+          .text2 {
+            margin-top: 0.4vh;
+            width: 12vw;
+          }
+        }
+      }
+    }
+  }
+  .fixedCardIsReg {
+    background: rgba(255, 94, 0, 1);
+    box-shadow: -10px -15px 15px rgba(255, 255, 255, 1);
+    box-shadow: 5px 10px 15px rgba(208, 213, 217, 1);
+  }
+  .switchCard {
+    height: 65vh;
+    width: 25vw;
+    position: absolute;
+    left: 24.5vw;
+    top: 50%;
+    margin-top: -32.5vh;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: -10px -15px 15px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 15px rgba(179, 179, 179, 1);
+    border-radius: 30px;
+    .login,
+    .register {
+      width: 100%;
+      height: 100%;
+      padding: 1.5vw;
+      box-sizing: border-box;
+      .top {
+        height: 10%;
+        display: flex;
+        .taiji {
+          width: 25px;
+          height: 25px;
+        }
+        .text {
+          font-size: 12px;
+          text-align: center;
+          line-height: 25px;
+          margin-left: 0.5vw;
+          font-weight: 600;
+        }
+        .saoyisao {
+          height: 25px;
+          width: 25px;
+          position: absolute;
+          right: 2vw;
+          cursor: pointer;
+        }
+      }
+      .middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8vh;
+        .bank {
+          width: 150px;
+          margin-bottom: 1vh;
+        }
+        .account,
+        .password {
+          width: 15vw;
+          display: flex;
+          margin-bottom: 1vh;
+        }
+        .findpw {
+          font-size: 12px;
+          margin: 20px 0;
+          cursor: pointer;
+          color: rgba(99, 99, 99, 1);
+        }
+        .loginBtn {
+          text-align: center;
+          height: 4.3vh;
+          width: 7.8vw;
+          line-height: 4vh;
+          font-weight: 600;
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 1);
+          border: 0.5px solid rgba(166, 166, 166, 1);
+          box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 2px 2px 5px rgba(207, 207, 207, 0.5);
+          border-radius: 10px;
+          margin-top: 4vh;
+          color: rgba(252, 61, 61, 1);
+          &:hover {
+            background: rgb(255, 220, 220);
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .circleContainer {
+          height: 10%;
+          display: flex;
+          .circle1 {
+            border: 0.5px solid rgba(27, 255, 10, 1);
+            box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.5);
+            box-shadow: 1px 1px 4px rgba(224, 224, 224, 0.5);
+            margin-right: 5vw;
+            &:hover {
+              background: rgba(178, 253, 173, 0.5);
+            }
+          }
+          .circle2 {
+            border: 0.5px solid rgba(0, 187, 250, 1);
+            box-shadow: -3px -3px 4px rgba(255, 255, 255, 0.5);
+            box-shadow: 1px 1px 4px rgba(224, 224, 224, 0.5);
+            &:hover {
+              background: rgba(185, 234, 250, 0.5);
+            }
+          }
+          .circle1,
+          .circle2 {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            .circleImg {
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+        .text {
+          margin-top: 5vh;
+          font-size: 16px;
+          color: rgba(99, 99, 99, 1);
+          letter-spacing: 5px;
+        }
+      }
+    }
+    #regBtn {
+      margin-top: 8vh;
+      position: relative;
+    }
+  }
+  .switchCardIsReg {
+    left: 51vw;
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
